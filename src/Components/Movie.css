@@ -1,0 +1,49 @@
+.MovieContainer{
+   padding: 0 15px;
+}
+
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.card{
+    margin: 20px auto;
+    width: 400px;
+    background: linear-gradient(to right, #333, #000000);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card .card-body{
+    padding: 10px;
+}
+
+.card .card-body span{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 30px;
+    color: crimson;
+    font-size: 20px;
+}
+
+.card img{
+    width: 400px;
+    height: 480px;
+    border-radius: 8px;
+}
+
+@media (max-width: 620px){
+  
+    .card{
+        width: 300px;
+    }
+    
+    .card img{
+        width: 300px;
+        height: 380px;
+        border-radius: 8px;
+    }
+}

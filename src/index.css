@@ -1,0 +1,110 @@
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background: linear-gradient(to right, #d509f0, #00fff7) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* Layaut */
+
+.nav,
+.footer {
+  background: #333;
+  padding: 10px 16px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav span {
+  color: #e61549;
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+/* Search */
+
+.serarchBar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 28px auto;
+  padding: 0 20px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  border: transparent;
+  transition: 0.3s all ease;
+}
+
+button {
+  padding: 10px 30px;
+  outline: none;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+button:hover {
+  background: #e61549;
+  color: #fff;
+}
+
+/* Eror Page */
+
+.NotFound {
+  margin: 30px auto;
+  font-size: 30px;
+  font-family: fantasy;
+  letter-spacing: 6px;
+  color: transparent;
+  -webkit-text-stroke-width: 1.6px;
+  -webkit-text-stroke-color: #e61549;
+  animation: notfound 3s ease infinite;
+}
+
+@keyframes notfound {
+  0% {
+    filter: hue-rotate(0);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* checks */
+
+.checks{
+  width: 100%;
+  text-align: center;
+}
+
+.checks input{
+  margin-right: 30px;
+}
+
+.checks label{
+  font-size: 20px;
+}
